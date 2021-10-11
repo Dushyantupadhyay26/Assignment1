@@ -186,7 +186,7 @@ public class project_1 {
             temp.forEach(t -> System.out.println(t));
             System.out.println("Choose slot: ");
             int choose = sc.nextInt();
-            System.out.println(citiname.get(unique_id)+" Vaccinated with ");
+            System.out.println(citiname.get(unique_id)+" vaccinated with covax");
 
         }
         else if(option==2){
@@ -203,7 +203,8 @@ public class project_1 {
     static void Check_slot(){
         System.out.print("Enter Hospital Id: ");
         int hospital_id = sc.nextInt();
-        System.out.println();
+        addslot.get(hospital_id);
+        temp.forEach(t -> System.out.println(t));
     }
     public static void status() {
 
@@ -211,6 +212,7 @@ public class project_1 {
         long id=sc.nextLong();
         if(count==1){
             System.out.println("PARTIALLY VACCINATED");
+            System.out.println("Next Dose due date: 3");
         }
         else if(count==2){
             System.out.println("FULLY VACCINATED");
